@@ -8,7 +8,7 @@
     },
     "autoload": {
     	"psr-4": {
-    		"zh7314\\php-analysis\\": "./src"
+    		"zh7314\\php-analysis\\": "./"
     	},
     	"files": [
     	]

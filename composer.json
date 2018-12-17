@@ -1,0 +1,16 @@
+{
+    "name": "zh7314/PHPAnalysis",
+    "description": "phpanalysis中文分词",
+    "type": "library",
+    "licence": "MIT",
+    "require": {
+    	"php": ">=5.6.5"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"zh7314\\PHPAnalysis\\": "./src"
+    	},
+    	"files": [
+    	]
+    }
+}

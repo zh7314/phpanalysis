@@ -11,7 +11,7 @@
  * @version 2.0
  *
  */
-
+namespace Zh7314\PhpAnalysis;
 //常量定义
 define('_SP_', chr(0xFF).chr(0xFE)); 
 define('UCS2', 'ucs-2be');

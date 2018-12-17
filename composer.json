@@ -12,5 +12,6 @@
     	},
     	"files": [
     	]
-    }
+    },
+    "minimum-stability": "dev-master"
 }

@@ -89,6 +89,6 @@ composer require zh7314/phpanalysis dev-master
 引入空间命名
 use zh7314\phpanalysis\PhpAnalysis;
 
-实际demo代码参看 zh7314.php
+实际demo代码参看 zh7314.php,注意这个是laravel的测试代码，demo.php 是独立使用的测试代码
 
  

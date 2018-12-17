@@ -2,7 +2,7 @@
 
 
 使用实例
-因为composer https://packagist.org/ 的包有不同程度的封装影响此插件的使用，so，独立上传一份作为加载包
+因为composer https://packagist.org/ 的包有不同程度的封装影响此插件的使用，so，独立上传一份包
 
 demo
 

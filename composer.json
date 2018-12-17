@@ -1,6 +1,6 @@
 {
-    "name": "zh7314/php-analysis",
-    "description": "php-analysis中文分词",
+    "name": "zh7314/phpanalysis",
+    "description": "phpanalysis中文分词",
     "type": "library",
     "licence": "MIT",
     "require": {

@@ -2,7 +2,7 @@
     "name": "zh7314/phpanalysis",
     "description": "phpanalysis中文分词",
     "type": "library",
-    "licence": "MIT",
+    "license": "MIT",
     "require": {
     	"php": ">=5.6.5"
     },

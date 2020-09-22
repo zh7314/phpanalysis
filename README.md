@@ -5,7 +5,7 @@
 因为composer https://packagist.org/ 的包有不同程度的封装影响此插件的使用，so，独立上传一份包
 
 demo
-
+```
 // 严格开发模式
 ini_set('display_errors', 'On');
 ini_set('memory_limit', '64M');
@@ -82,13 +82,59 @@ if($str != '')
     
     $pa = '';
     
-laravel 使用demo
+```
 
-composer require zh7314/phpanalysis dev-master
+composer require zh7314/phpanalysis
 
 引入空间命名
 use zh7314\phpanalysis\PhpAnalysis;
 
 实际demo代码参看 zh7314.php,注意这个是laravel的测试代码，demo.php 是独立使用的测试代码
+
+```
+use zh7314\phpanalysis\PhpAnalysis;
+
+class ZxController{
+
+    public function test(Request $Request) {
+
+        $str = '老王爱看世界杯';
+//岐义处理
+        $do_fork = true;
+//新词识别
+        $do_unit = true;
+//多元切分
+        $do_multi = true;
+//词性标注
+        $do_prop = false;
+//是否预载全部词条
+        $pri_dict = true;
+
+
+//初始化类
+        PhpAnalysis::$loadInit = false;
+        $pa = new PhpAnalysis('utf-8', 'utf-8', $pri_dict);
+
+//载入词典
+        $pa->LoadDict();
+
+//执行分词
+        $pa->SetSource($str);
+        $pa->differMax = $do_multi;
+        $pa->unitWord = $do_unit;
+
+        $pa->StartAnalysis($do_fork);
+
+
+        $okresult = $pa->GetFinallyResult(' ', $do_prop);
+
+        $pa_foundWordStr = $pa->foundWordStr;
+
+        p($okresult);
+        pp($pa_foundWordStr);
+}
+}
+
+```
 
  
